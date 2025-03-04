@@ -1,0 +1,49 @@
+/* style.css */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #34495E;
+    --accent-color: #2980B9;
+    --light-gray: #ECF0F1;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Styles */
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--primary-color);
+}
+
+/* Desktop Styles */
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .mobile-view { display: none; }
+    .desktop-view { display: block; }
+}
+
+@media (max-width: 767px) {
+    .desktop-view { display: none; }
+    .mobile-view { display: block; }
+}
+
+/* Footer Styles */
+footer {
+    background: var(--secondary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
