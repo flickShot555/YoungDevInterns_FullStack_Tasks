@@ -21,7 +21,6 @@
                 <li><a href="#">Portals</a></li>
             </ul>
         </div>
-        
     </nav>
     
     <!-- Banner -->
@@ -55,10 +54,10 @@
         
         <div class="right-panel">
             <h4>Follow Us</h4>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
     
