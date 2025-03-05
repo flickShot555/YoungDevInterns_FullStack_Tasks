@@ -6,6 +6,16 @@
     <title>Comsats University Islamabad, Attock Campus</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            if (menu.style.display === "flex") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "flex";
+            }
+        }
+    </script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,7 +23,8 @@
         <div class="nav-right">
             <img src="comsats logo.png" alt="Comsats Logo" class="logo">
         </div>
-        <div class="nav-left">
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-left" id="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Admissions</a></li>

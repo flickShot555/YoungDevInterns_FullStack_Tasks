@@ -7,11 +7,24 @@ body {
 
 .navbar {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;
     background: #003366;
     padding: 15px;
     color: white;
+}
+
+.nav-left {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 .nav-left ul {
@@ -31,15 +44,17 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .nav-left ul li a:hover {
     color: #ffcc00;
+    transform: scale(1.1);
 }
 
 .logo {
-    height: 50px;
+    height: 100px; /* Doubled the size for mobile */
     margin-top: 10px;
 }
 
@@ -48,7 +63,7 @@ body {
     background: #004488;
     color: white;
     padding: 20px;
-    font-size: 24px;
+    font-size: 20px; /* Reduced font size for mobile */
 }
 
 .container {
@@ -79,12 +94,25 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s ease-in-out;
 }
 
-.btn:hover, .nav-left ul li a:hover {
+.btn:hover {
+    background: #ffcc00;
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #003366;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
 }
 
 .footer {
@@ -101,6 +129,12 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
+    .nav-left {
+        display: flex;
+    }
+    .burger-menu {
+        display: none;
+    }
     .nav-left ul {
         flex-direction: row;
     }
@@ -116,5 +150,11 @@ body {
     }
     .center-panel {
         width: 45%;
+    }
+    .logo {
+        height: 50px;
+    }
+    .banner {
+        font-size: 24px;
     }
 }
