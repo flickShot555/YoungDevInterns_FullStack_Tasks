@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comsats University Islamabad, Attock Campus</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index_styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script>
         function toggleMenu() {
@@ -26,10 +26,10 @@
         <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
         <div class="nav-left" id="nav-menu">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">Admissions</a></li>
                 <li><a href="#">Careers</a></li>
-                <li><a href="#">Portals</a></li>
+                <li><a href="login.php">Portals</a></li>
             </ul>
         </div>
     </nav>
