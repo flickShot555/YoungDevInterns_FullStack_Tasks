@@ -15,7 +15,7 @@
 
     <!-- Banner -->
     <header class="banner">
-        <h1>Welcome to Admin Pannel Comsats University Islamabad, Attock Campus</h1>
+        <h1>Welcome to Student portal 'Comsats University Islamabad, Attock Campus'</h1>
     </header>
 </body>
 </html>

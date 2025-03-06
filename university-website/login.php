@@ -59,8 +59,8 @@
                         <h2>Student Login</h2>
                         <form style="display: flex;flex-direction: column; align-items: center;justify-content: center;" 
                                 action="studentlogin.php" method="POST">
-                        <input style="width:100%" type="text" placeholder="Student ID" required>
-                        <input style="width:100%" type="password" placeholder="Password" required>
+                        <input style="width:100%" type="text" placeholder="email" id="email" required>
+                        <input style="width:100%" type="password" placeholder="Password" id="password" required>
                         <button type="submit">Login</button>
                         </form>
                     </div>
@@ -74,8 +74,8 @@
                         <h2>Admin Login</h2>
                         <form style="display: flex;flex-direction: column; align-items: center;justify-content: center;"
                             action="adminlogin.php" method="POST">
-                        <input style="width:100%" type="text" placeholder="Student ID" required>
-                        <input style="width:100%" type="password" placeholder="Password" required>
+                        <input style="width:100%" type="text" placeholder="email" id="email" required>
+                        <input style="width:100%" type="password" placeholder="Password" id="password" required>
                         <button type="submit">Login</button>
                         </form>
                     </div>
