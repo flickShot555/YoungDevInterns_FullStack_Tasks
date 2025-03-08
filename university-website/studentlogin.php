@@ -1,13 +1,11 @@
 <?php
-$_SESSION;
-session_start();
 
-include 'dbconfigs.php';
+include("dbconfigs.php");
 
-$email  = $_POST['email'];
-$password = $_POST['password'];
+$var_email  = $_POST['email'];
+$var_password = $_POST['password'];
 
-$sql = "SELECT * FROM students WHERE email='$email' AND password='$password'";
+$sql = "SELECT * FROM studentcredentials WHERE email=\"$var_email\" AND password=\"$var_password\"";
 $result = mysqli_query($con, $sql);
 if (mysqli_num_rows($result) > 0) {
     echo "Login Successful";

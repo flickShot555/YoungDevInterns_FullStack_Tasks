@@ -17,5 +17,10 @@
     <header class="banner">
         <h1>Welcome to Admin Pannel Comsats University Islamabad, Attock Campus</h1>
     </header>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Comsats University Islamabad, Attock Campus | Established 1980 | &copy; 2024 All Rights Reserved</p>
+    </footer>
 </body>
 </html>
