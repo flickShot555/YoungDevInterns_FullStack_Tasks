@@ -21,17 +21,20 @@
 
     <div class="container">
         <div class="left-panel">
-            <h4>Message from Director</h4>
-            <p>Welcome to our prestigious institution...</p>
+            <h4>Subjects</h4>
+                <?php
+                    // Fetching Subjects from database (Example code)
+                    $subjects = array("Data Structures", "Algorithms", "Database Systems", "Operating Systems", "Computer Networks");
+                    foreach($subjects as $subject) {
+                        echo "<p>$subject</p>";
+                    }
+                ?>
         </div>
         
         <div class="center-panel">
             <div class="news-panel">
-                <h4>Latest News</h4>
-                <?php
-                    // Fetching news from database (Example code)
-                    echo "<p>News will be dynamically loaded here.</p>";
-                ?>
+                <h4>Message from Director</h4>
+                <p>Welcome to our prestigious institution...</p>
             </div>
             <div class="features">
                 <h4>Campus Features</h4>
