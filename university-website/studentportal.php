@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portal_styles.css">
+    <link rel="stylesheet" href="sportal_styles.css">
+    <script src="https://kit.fontawesome.com/6e98f21a5d.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
+    <?php
+    include("dbconfigs.php");
+    //add sessions here
+    session_start();
+    if($_SESSION['email']!='1')
+    {
+        //echo "Welcome to Student portal";
+        header('location: login.php');
+    }
+    ?>
+
     <nav class="navbar">
         <div class="nav-right">
             <img src="comsats logo.png" alt="Comsats Logo" class="logo">
         </div>
+        <button class="logout-btn" onclick="location.href='logout.php'">Logout</button>
         
     </nav>
 
