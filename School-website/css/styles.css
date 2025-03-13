@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Landing Page */
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Login Page */
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.toggle-forms {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.toggle-forms .toggle {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.toggle-forms .toggle.active,
+.toggle-forms .toggle:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+.form-box {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.form-box.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+.form-box input[type='text'],
+.form-box input[type='password'] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-box button {
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-box button:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.error-message {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #f00;
+    background-color: #ffe6e6;
+    width: 300px;
+    border-radius: 10px;
+}
+.error-message a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
