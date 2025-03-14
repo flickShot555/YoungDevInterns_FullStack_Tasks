@@ -8,18 +8,28 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #003366;
+    /*background-color: #003366;*/
+    background-color: #f00;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav a {
-    color: #fff;
+    background-color: #003366;
+    color: #5eb9f5;
     margin-right: 15px;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 /* Landing Page */
